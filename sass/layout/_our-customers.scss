@@ -1,8 +1,9 @@
 .our-customers {
   padding-top: 94px;
   padding-bottom: 94px;
+}
 
-  & h2 {
+.our-customers__title {
     margin-bottom: 50px;
     justify-content: center;
     display: flex;
@@ -11,7 +12,6 @@
     letter-spacing: 0.03em;
     color: var(--main-black-color);
   }
-}
 
 
 
@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 
-.our-customer-list-item {
+.our-customer-list__item {
   display: flex;
 }
 
@@ -42,14 +42,14 @@
     outline: transparent;
   }
   
-  &:focus .our-customer-icon,
-  &:hover .our-customer-icon {
+  &:focus .our-customer-link__icon,
+  &:hover .our-customer-link__icon {
     fill: var(--active-link);
   }
 
 }
 
-.our-customer-icon {
+.our-customer-link__icon {
   fill: var(--logo-color);
   transition-property: fill;
   transition-duration: 250ms;

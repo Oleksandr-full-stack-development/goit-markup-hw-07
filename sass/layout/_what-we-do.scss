@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.img-list-item {
+.img-list__item {
   justify-content: space-between;
   position: relative;
   
@@ -14,14 +14,12 @@
 
 
 
-.what-we-do,
-.our-team {
+.what-we-do-section__title,
+.our-team__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(36px, 1.16, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-black-color);
   margin-bottom: 50px;
 }
@@ -39,13 +37,11 @@
   overflow: auto;
 }
 
-.what-we-do-title {
+.what-we-do-thumb__title {
   text-transform: uppercase;
   color: #ffffff;
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em);
 }

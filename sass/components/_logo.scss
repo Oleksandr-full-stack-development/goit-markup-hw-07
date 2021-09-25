@@ -1,26 +1,23 @@
-.navigation__logo {
+.logo {
   font-family: var(--secondary-font-family);
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(26px, 1.19, 0.03em);
   color: var(--logo-black);
     &:focus,
     &:hover {
     outline: transparent;
   }
-  &.navigation__logo_start {
-    color: var(--active-link);
-  }
-  
-  &.logo_finish {
-    color: var(--main-white);
-  }
 }
 
-.logo_container {
+.logo--blue {
+  color: var(--active-link);
+}
+  
+.logo--white {
+  color: var(--main-white);
+}
+
+.navigation__logo {
   margin-right: 90px;
 }
-
-

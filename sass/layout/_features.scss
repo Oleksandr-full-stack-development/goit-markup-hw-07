@@ -5,47 +5,35 @@
   /* flex-wrap: wrap; */
 }
 
-.features-list-item:not(:last-child) {
+.features-list__item:not(:last-child) {
   margin-right: 30px;
   /* margin-top: 30px; */
   /* flex-basis: calc ((100% - 120px)/ 4); */
-
-
 }
 
-.features-list-item > h3 {
-  margin-bottom: 10px;
-}
-
-.features-section {
+.what-we-do-section {
   padding-bottom: 94px;
 }
 
-.our-features h3 {
+.our-features__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font (14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-black-color);
+  margin-bottom: 10px;
 }
 
-.title-our-features {
+.title{
   display: none;
 }
 
-.features-list p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.72;
-  letter-spacing: 0.03em;
-  color: var(--paragraphs-and-contacts);
-}
-
-.features-p {
+.features-list__text {
   /* display: inline-block; */
   width: 270px;
+  font-weight: normal;
+  @include font(14px, 1.72, 0.03em);
+  color: var(--paragraphs-and-contacts);
 }
 
 .features-icon {

@@ -1,4 +1,4 @@
-.container-header {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -10,9 +10,11 @@
 }
 
 .list-nav {
-  display: flex;
+  @include display(flex, center);
+}
+
+.header__list-nav {
   margin-left: auto;
-  align-items: center;
 }
 
 .navigation {
@@ -61,17 +63,20 @@
     transform: scaleX(0.5);
     opacity: 1;
   }
+}
   
-  &.current {
+  .list-nav__link-nav--current {
     color: var(--active-link);
+    
+    &::after {
+      opacity: 1;  
   }
+}
   
-  &.current::after {
+  .list-nav__link-nav--current::after {
     opacity: 1;
   }
-  
 
-}
 
 .list-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -81,55 +86,39 @@
 .link-mail-tel {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.02em);
   text-decoration: none;
-  color: var(--footer-head-color-link-tel);
-  
-  &.top {
-    display: flex;
-    align-items: center;
-    color: var(--paragraphs-and-contacts);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  &:hover,
-  &:focus {
-    color: var(--active-link);
-    outline: none;
-  }
+  @include display(flex, center);
+  color: var(--paragraphs-and-contacts);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &.top:hover .mail-top,
-    &.top:focus .tel-top,
-    &.top:hover .tel-top,
-    &.top:focus .mail-top {
-      fill: var(--active-link);
-      outline: none;
+    &:hover,
+    &:focus {
+      color: var(--active-link);
+
+    }
+
+      &:hover .contact-icon,
+      &:focus .contact-icon {
+        fill: var(--active-link);
 }
-
-}
-
-.list-nav__link-mail {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
 }
 
 .list-nav__tel {
-  display: flex;
-  align-items: center;
+  @include display (flex, center);
 }
 
-.mail-top,
-.tel-top {
-  margin-right: 10px;
-  fill: var(--paragraphes-and-contacts);
+.contact-icon
+ {
+  fill: var(--paragraphs-and-contacts);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.list-nav__contact-icon {
+  margin-right: 10px;
+}
 

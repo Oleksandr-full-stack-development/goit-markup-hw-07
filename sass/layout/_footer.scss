@@ -7,27 +7,38 @@
   margin-right: auto; */
 }
 
-.social-link-title {
+.social-link-thumb__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-white);
   margin-bottom: 20px;
 }
 
-.logo-footer {
+.footer__logo {
   margin-bottom: 20px;
 }
 
-.adress-footer p,
-.link-mail-tel.down {
+.address-footer__text,
+.address-footer__link-mail-tel {
   margin-bottom: 9px;
   display: block;
 }
+
+.address-footer__text {
+    font-style: normal;
+    @include font(14px, 1.71, 0.03em);
+    color: var(--main-white);
+}
+    
+.address-footer__link-mail-tel {
+      font-style: normal;
+      @include font(14px, 1.71, 0.03em);
+      color: var(--footer-head-color-link-tel);
+    }
+
 
 .link-mail-tel-footer {
   display: block;
@@ -39,41 +50,35 @@
 
 }
 
-
-
-.container.container-footer {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.social-link-footer {
+.footer__social-link-thumb {
   margin-left: 70px;
 }
 
-.white-uppercase-text {
+.sign-up__text {
   color: var(--main-white);
   font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em);
   text-transform: uppercase;
   align-self: flex-start;
 }
 
-.telegram-sign-up {
+.telegram-sign-up-thumb {
   display: flex;
   align-items: baseline;
 }
 
-.sign-up {
+.footer__sign-up {
   margin-left: 93px;
 }
 
 .sign-up-input {
   width: 358px;
   height: 50px;
-  margin-top: 20px;
-  margin-right: 12px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -85,28 +90,8 @@
   }
 }
 
+.footer__sign-up-input {
+  margin-top: 20px;
+  margin-right: 12px;
+}
 
-.sign-up-button {
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 28px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--main-white);
-  background-color: var(--active-link);
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  text-align: center;
-}
-.sign-up-icon {
-  fill: var(--main-white);
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-}
