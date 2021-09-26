@@ -7,13 +7,9 @@
     margin-bottom: 50px;
     justify-content: center;
     display: flex;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    @include font(36px, 1.16, 0.03em);
     color: var(--main-black-color);
-  }
-
-
+}
 
 .our-customer-list {
   display: flex;
@@ -39,7 +35,7 @@
   &:focus,
   &:hover {
     border-color: var(--active-link);
-    outline: transparent;
+    // outline: transparent;
   }
   
   &:focus .our-customer-link__icon,

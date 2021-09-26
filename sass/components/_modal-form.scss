@@ -8,14 +8,14 @@
   text-align: center;
   margin-bottom: 12px;
   font-family: Roboto;
-  font-style: normal;
+  // font-style: normal;
   font-weight: bold;
   @include font(20p, 1.15, 0.03em);
 }
 
 .modal-form-field {
   @include font(12px, 1.16, 0.01em);
-  font-weight: normal;
+  // font-weight: normal;
 }
 
 .modal-form__modal-form-field {
@@ -93,8 +93,8 @@
 .modal-form-checkbox-label {
   @include display(flex, center);
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  // font-style: normal;
+  // font-weight: normal;
   @include font(14px, 1.71, 0.03em);
 
         .modal-form-checkbox:checked + &::before {

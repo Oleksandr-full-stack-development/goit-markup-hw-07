@@ -9,7 +9,7 @@
 
 .social-link-thumb__title {
   font-family: Roboto;
-  font-style: normal;
+  // font-style: normal;
   font-weight: bold;
   @include font(14px, 1.14, 0.03em);
   text-transform: uppercase;
@@ -28,13 +28,13 @@
 }
 
 .address-footer__text {
-    font-style: normal;
+    // font-style: normal;
     @include font(14px, 1.71, 0.03em);
     color: var(--main-white);
 }
     
 .address-footer__link-mail-tel {
-      font-style: normal;
+      // font-style: normal;
       @include font(14px, 1.71, 0.03em);
       color: var(--footer-head-color-link-tel);
     }

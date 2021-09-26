@@ -23,12 +23,10 @@
 }
 
 .list-nav__link-nav {
-  font-style: normal;
+  // font-style: normal;
   position: relative;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.14, 0.02em);
   text-decoration: none;
   color: var(--main-black-color);
   padding-top: 10px;
@@ -40,7 +38,7 @@
   &:hover,
   &:focus {
     color: var(--active-link);
-    outline: none;
+    // outline: none;
   }
   
   &::after {
@@ -84,7 +82,7 @@
 
 
 .link-mail-tel {
-  font-style: normal;
+  // font-style: normal;
   font-weight: 500;
   @include font(14px, 1.14, 0.02em);
   text-decoration: none;

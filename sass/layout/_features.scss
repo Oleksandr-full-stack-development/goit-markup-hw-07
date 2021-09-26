@@ -16,7 +16,7 @@
 }
 
 .our-features__title {
-  font-style: normal;
+  // font-style: normal;
   font-weight: bold;
   @include font (14px, 1.14, 0.03em);
   text-transform: uppercase;
@@ -31,7 +31,7 @@
 .features-list__text {
   /* display: inline-block; */
   width: 270px;
-  font-weight: normal;
+  // font-weight: normal;
   @include font(14px, 1.72, 0.03em);
   color: var(--paragraphs-and-contacts);
 }
